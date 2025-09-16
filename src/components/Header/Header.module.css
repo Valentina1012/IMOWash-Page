@@ -1,0 +1,94 @@
+.header {
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.logoySelect {
+    display: flex;
+    align-items: center;
+    gap: 4.6em;
+}
+
+.logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.6em;
+    margin: 1em;
+}
+
+.select {
+    outline: none;
+    border: none;
+    padding: .6em;  
+    border-radius: .4em;
+}
+
+.icon {
+    width: 4em;
+    height: fit-content;
+    justify-self: end;
+    position: absolute;
+    left: 50vw;
+}
+
+.menu {
+    display: none;
+}
+
+.links {
+    margin-right: 3em;
+    font-size: 1em;
+}
+
+.links a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 1em;
+}
+
+.links a:hover {
+    color: #ccc;
+}
+
+@media (max-width: 1570px) and (min-width: 1293px){
+
+}
+
+@media (max-width: 1293px) and (min-width: 20px){
+    .menu {
+        display: flex;
+        width: 2em;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        gap: .8em;
+        opacity: 0;
+        margin-right: 0;
+        margin-top: 2em;
+        transition: opacity 0.3s ease;
+        text-align: right;
+    }
+
+    .menuContainer {
+        margin-top: 14em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .logoySelect {
+        gap: .4em;
+    }
+
+}
+
+@media (max-width: 535px) {
+    .icon {
+        display: none;
+    }
+}
