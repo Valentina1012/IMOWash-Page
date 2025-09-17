@@ -1,12 +1,13 @@
 import './App.css'
-import Header from './components/Header/Header.jsx'
 import Hero from './components/Hero/Hero.jsx'
+import Introduction from './components/Introduction/Introduction.jsx'
 
 function App() {
 
   return (
     <>  
       <Hero />
+      <Introduction />
     </>
   )
 }

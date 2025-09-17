@@ -1,0 +1,111 @@
+.principal {
+    color: #fff;
+    width: var(--widthCardsIntro);
+    height: var(--heightCardsIntro);
+    padding: 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ccc;
+    background-image: url("../../assets/img/white-car.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.principal header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.principal header p {
+    width: 13em;
+    margin: 0;
+    font-size: .8em;
+    opacity: .6;
+}
+
+.principal header span {
+    height: fit-content;
+    width: fit-content;
+    border: none;
+    background: #417bff;
+    color: #fff;
+    border-radius: 1em;
+    padding: .4em .8em;
+    font-size: .7em;
+}
+
+.principal .title {
+    width: 9em;
+    margin: 0;
+    font-size: 2em;
+    line-height: 1em;
+}
+
+.principal footer p {
+    font-size: .7em;
+    opacity: .6;
+}
+
+.iconWhite {
+    width: 2.2em;
+    height: fit-content;
+}
+
+.principal footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: fit-content;
+}
+
+.principal footer p {
+    margin: 0;
+}
+
+.principal .title {
+    font-size: 4.2em;
+    width: 6.8em;
+    line-height: 1em;
+    margin: .4em 0;
+}
+
+
+@media (max-width: 1293px) and (min-width: 20px){
+    .principal {
+        flex-direction: row-reverse;
+        color: #fff;
+        width: 85%;
+        height: 12em;
+        background-image: linear-gradient(to bottom, rgba(36, 46, 186, 0.4), rgba(0, 0, 0, 0.8)), url("../../assets/img/white-car.png");
+        background-position: 0%;
+    }
+
+    .principal header {
+        flex-direction: column;
+    }
+
+    .principal .title {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 820px) {
+    .principal {
+        width: 90%;
+    }
+
+    .principal .title {
+        font-size: 1.7em;
+    }
+
+    .principal footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .4em;
+    }
+
+    .principal footer p {
+        font-size: 70%;
+    }
+}

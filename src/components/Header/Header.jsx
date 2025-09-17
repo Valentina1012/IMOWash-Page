@@ -1,6 +1,6 @@
 import Styles from './Header.module.css'
 import icono from '../../assets/img/iconWhite-IMO.png'
-import iconoMenu from '../../assets/img/icon-menu.svg'
+import { IoIosMenu } from "react-icons/io";
 import { useState } from 'react'
 
 export default function Header() {
@@ -23,7 +23,7 @@ export default function Header() {
             </div>
             <img className={`${Styles.icon}`} src={icono} alt="IMO white icon"/>
             <section className={`${Styles.menuContainer}`}>
-                <img src={iconoMenu} alt='menu icon' className={`${Styles.menu}`} onClick={() => manageMenu()}/>
+                <span className={`${Styles.menu}`} onClick={() => manageMenu()}><IoIosMenu /></span>
                 <nav id="menu-links" className={`${Styles.links}`}>
                     <a href="">IMO technology</a>   
                     <a href="">Our features</a>

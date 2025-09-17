@@ -1,8 +1,9 @@
 .principal {
-    height: 88vh;
+    height: 90vh;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    padding-bottom: 2em;
 }
 
 .title {
@@ -22,10 +23,27 @@
     min-width: fit-content;
 }
 
+.appContainr {
+    margin-left: 4em;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start;
+}
+
 .pScroll {
     margin: 0;
     color: #fff;
-    opacity: .4;
+    opacity: .6;
+}
+
+.mouseIcon {
+    display: flex;
+    margin: .2em;
+}
+
+.mouseIcon svg {
+    width: 1.2em;
+    height: fit-content;
 }
 
 .downloadsContnr {

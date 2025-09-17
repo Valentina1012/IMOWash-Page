@@ -1,0 +1,28 @@
+.principal {
+    background: #fff;
+    color: #000;
+    display: flex; 
+    border-radius: .4em; 
+    padding: .4em; 
+    min-width: fit-content
+}
+
+.logoApp svg {
+    width: 1.8em; 
+    height: fit-content;
+}
+
+.logoApp {
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    margin: 0; 
+    font-size:.7em
+}
+
+.appName {
+    margin: 0; 
+    font-size:1.2em
+}
