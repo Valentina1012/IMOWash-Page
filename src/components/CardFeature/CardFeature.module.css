@@ -1,0 +1,57 @@
+.principal {
+    width: clamp(8rem, 19vw, 30rem);
+    height: clamp(18rem, 28vw, 60rem);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--deepSignalBlue);
+    position: relative;
+    z-index: 10;
+}
+
+.headerContainr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnCard {
+    height: fit-content;
+    background: #fff;
+    color: var(--phantomBlack);
+    border: none;
+    border-radius: 2em;
+    padding: .2em .8em;
+    font-size: 1.2em;
+}   
+
+.principal p {
+    font-size: clamp(1rem, 1.8vw, 9rem);
+    width: 86%;
+}
+
+.principal img {
+    height: fit-content;
+    width: 8em;
+}
+
+
+@media (min-width: 820px) and (max-width: 1270px){
+    .principal img {
+        width: 5em;
+    }
+}
+
+@media (max-width: 820px) {
+    .principal img {
+        width: 3em;
+    }
+
+    .btnCard {
+        font-size: 1em;
+    }
+
+    .principal {
+        height: 15em;
+    }
+}

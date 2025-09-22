@@ -4,6 +4,14 @@
   padding: 0;
   --widthCardsIntro: 36%;
   --heightCardsIntro: 40em;
+  --mainGradient: #5187ff;
+  --pureSky: #417bff;
+  --cobaltDrive: #3667d8;
+  --deepSignalBlue: #0032BD;
+  --midnightVelocity: #0025a5;
+  --bgGradient: #080818;
+  --phantomBlack: #00040c;
+  --offWhite: #eceae8;
 }
 
 @font-face {

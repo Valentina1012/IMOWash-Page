@@ -1,6 +1,7 @@
 import './App.css'
-import Hero from './components/Hero/Hero.jsx'
-import Introduction from './components/Introduction/Introduction.jsx'
+import Hero from './sections/Hero/Hero.jsx'
+import Introduction from './sections/Introduction/Introduction.jsx'
+import OurFeatures from './sections/OurFeatures/OurFeatures.jsx'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>  
       <Hero />
       <Introduction />
+      <OurFeatures />
     </>
   )
 }
