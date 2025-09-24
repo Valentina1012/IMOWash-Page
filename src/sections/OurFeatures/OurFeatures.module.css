@@ -1,6 +1,6 @@
 .principal {
     background: #fff;
-    height: 100em;
+    height: 110em;  
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -35,10 +35,20 @@
     top: 50%;
 }
 
+@media (min-width: 1270px) and (max-width: 1716px) {
+    .principal {
+        padding-top: 4em;
+        height: 90em;
+    }
+}
 
 @media (min-width: 820px) and (max-width: 1270px) {
     .twoContainr {
         padding: 0 3em;
+    }
+
+    .principal {
+        height: 65em;
     }
 }
 
@@ -48,7 +58,7 @@
     }
 
     .principal {
-        padding-top: 6em;
+        height: 60em;
     }
 
     .featuresContainr {
