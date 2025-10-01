@@ -55,7 +55,7 @@ hr {
 
 }
 
-@media (max-width: 535px) {
+@media (max-width: 576px) {
     .header {
         width: 100%;
     }
@@ -63,4 +63,19 @@ hr {
     .description {
         max-width: 19em;
     }
+    
+    .principal  {
+        border: none;
+    }
+
+    .title {
+        font-size: clamp(1.2rem, 2.4vw, 9rem);
+        width: 80%;
+    }
+
+    .innerContainr {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
+

@@ -11,6 +11,7 @@
   --midnightVelocity: #0025a5;
   --bgGradient: #080818;
   --phantomBlack: #00040c;
+  --deepGray: #444546;
   --offWhite: #eceae8;
 }
 
@@ -31,7 +32,6 @@
 body {
   font-family: "Helvetica Now Display";
   font-weight: regular;
-  /* width: 90vw; */
   margin: 0;
   color: #fff;
   background-color: #292929;
