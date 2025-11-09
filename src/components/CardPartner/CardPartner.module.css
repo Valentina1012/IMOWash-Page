@@ -1,0 +1,46 @@
+.principal {
+    position: relative;
+    background: #EFF1F5;
+    height: 100%;
+    width: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin: .5em;
+
+    @media (max-width: 820px) {
+        margin: .2em;
+        width: 10em
+    }
+}
+
+.iconContainr {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    height: fit-content;
+    width: 6em;
+
+    @media (max-width: 820px) {
+        width: 2.4em;
+    }
+}
+
+.iconBrand {
+    color: #000;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #c0c0c0;
+    opacity: 0.4;
+    padding: .4em;
+    margin: 0;
+
+    @media (max-width: 820px) {
+        display: none;    
+    }
+}

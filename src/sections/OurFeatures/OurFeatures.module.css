@@ -4,6 +4,19 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+
+    @media (min-width: 1270px) and (max-width: 1716px) {
+        padding-top: 4em;
+        height: 90em;
+    }
+
+    @media (min-width: 820px) and (max-width: 1270px) {
+        height: 65em;
+    }
+
+    @media (max-width: 820px) {
+        height: 55em;
+    }
 }
 
 .featuresContainr {
@@ -12,6 +25,10 @@
     display: flex;
     flex-direction: column;
     gap: 2em;
+
+    @media (max-width: 820px) {
+        gap: 4em;
+    }
 }
 
 .firstChild {
@@ -22,6 +39,14 @@
     display: flex;
     justify-content: space-between;
     padding: 0 12em;
+
+    @media (min-width: 820px) and (max-width: 1270px) {
+        padding: 0 3em;
+    }
+
+    @media (max-width: 820px) {
+        padding: 0 1em;
+    }
 }
 
 .title {
@@ -33,36 +58,4 @@
     position: sticky;
     z-index: 1;
     top: 50%;
-}
-
-@media (min-width: 1270px) and (max-width: 1716px) {
-    .principal {
-        padding-top: 4em;
-        height: 90em;
-    }
-}
-
-@media (min-width: 820px) and (max-width: 1270px) {
-    .twoContainr {
-        padding: 0 3em;
-    }
-
-    .principal {
-        height: 65em;
-    }
-}
-
-@media (max-width: 820px) {
-    .twoContainr {
-        padding: 0 1em;
-    }
-
-    .principal {
-        height: 60em;
-    }
-
-    .featuresContainr {
-        gap: 4em;
-    }
-
 }

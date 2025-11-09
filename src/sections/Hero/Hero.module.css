@@ -1,9 +1,16 @@
 .principal {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     padding-bottom: 2em;
+
+    @media (max-width: 920px) and (min-width: 20px){ 
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        gap: 2em;
+    }
 }
 
 .title {
@@ -15,12 +22,21 @@
     font-weight: inherit;
     padding-left: 1.2em;
     min-width: 6.5em;
+
+    @media (max-width: 920px) and (min-width: 20px){ 
+        padding: 0 0 .6em 0;
+        padding-left: 0;
+    }
 }
 
 .scrollContainer {
     display: flex;
     align-items: center;
     min-width: fit-content;
+
+    @media (max-width: 920px) and (min-width: 20px){ 
+        display: none;
+    }
 }
 
 .appContainr {
@@ -28,6 +44,14 @@
     display: flex; 
     flex-direction: column; 
     justify-content: flex-start;
+
+    @media (max-width: 920px) and (min-width: 20px){ 
+        margin-left: 1em;
+    }
+}
+
+.titleDownloads {
+    font-size: 1.3em;
 }
 
 .pScroll {
@@ -49,7 +73,7 @@
 .downloadsContnr {
     display: flex;
     gap: 2em;
-    margin: 0 4em 0 0;
+    margin: 1em 4em 0 0;
 }
 
 .videoBg {
@@ -61,29 +85,3 @@
     left: 0;
     z-index: -1;
 }
-
-@media (max-width: 1570px) and (min-width: 1293px){
-
-}
-
-@media (max-width: 920px) and (min-width: 20px){
-    .principal {
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-end;
-        gap: 2em;
-    }
-
-    .scrollContainer {
-        display: none;
-    }
-
-    .title {
-        padding-left: 0;
-    }
-
-    .appContainr {
-        margin-left: 1em;
-    }
-}
-

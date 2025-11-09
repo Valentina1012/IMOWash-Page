@@ -3,9 +3,14 @@
     flex-direction: column;
     background: var(--deepSignalBlue);
     padding: 1em;
-    border: 40px solid #fff;
+    border-right: 40px solid #fff;
+    border-left: 40px solid #fff;
     position: relative;
     z-index: 30;
+
+    @media (max-width: 576px) {
+        border: none;
+    }
 }
 
 hr {
@@ -14,24 +19,36 @@ hr {
 }
 
 .header {
-    width: 60%;
+    width: 100%;
     height: fit-content;
     opacity: .8;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 576px) {
+        width: 100%;
+    }
+    :last-child {
+        width: 50%;
+    }
 }
 
 .introduction {
     font-size: clamp(1rem, 1.8vw, 9rem);
     min-width: 8em;
-    max-width: 16em;
+    max-width: 100%;
 }
 
 .title {
     font-size: clamp(1rem, 2.4vw, 9rem);
     width: 7.6em;
     margin: 0;
+
+    @media (max-width: 576px) {
+        font-size: clamp(1.2rem, 2.4vw, 9rem);
+        width: 80%;
+    }
 }
 
 .innerContainr {
@@ -39,43 +56,37 @@ hr {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+
+    @media (max-width: 576px) {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
 }
 
 .description {
     min-width: 8em;
-    max-width: 35em;
+    max-width: 30em;
     font-size: clamp(0.7rem, 1vw, 5rem);
     opacity: .8;
+
+    @media (max-width: 576px) {
+        max-width: 100%;
+    }
 }
 
 .rightColContainr {
+    width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    height: 100%;
 
-}
-
-@media (max-width: 576px) {
-    .header {
+    @media (max-width: 576px) {
         width: 100%;
-    }
-
-    .description {
-        max-width: 19em;
-    }
-    
-    .principal  {
-        border: none;
-    }
-
-    .title {
-        font-size: clamp(1.2rem, 2.4vw, 9rem);
-        width: 80%;
-    }
-
-    .innerContainr {
-        flex-direction: column;
-        align-items: flex-start;
+        justify-content: center;
+        gap: 1em;
+        height: 50%;
     }
 }
 

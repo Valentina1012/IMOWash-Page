@@ -8,8 +8,15 @@ export default function Header() {
 
     const manageMenu = () => {
         const dataMenu = document.getElementById("menu-links");
+        const menuBg = document.getElementById("menu-bg");
 
-        showingMenu ? dataMenu.style.opacity = "1" : dataMenu.style.opacity = "0"
+        if(showingMenu) {
+            dataMenu.style.transform = "translateX(150px)"
+            menuBg.style.background = "rgba(0, 0, 0, 0.5)"
+        } else {
+            dataMenu.style.transform = "translateX(100vw)"
+            menuBg.style.background = "none"
+        }
         setShowingMenu(!showingMenu);
     }
 
@@ -22,17 +29,20 @@ export default function Header() {
                 </select>
             </div>
             <img className={`${Styles.icon}`} src={icono} alt="IMO white icon"/>
-            <section className={`${Styles.menuContainer}`}>
-                <span className={`${Styles.menu}`} onClick={() => manageMenu()}><IoIosMenu /></span>
-                <nav id="menu-links" className={`${Styles.links}`}>
-                    <a href="">IMO technology</a>   
-                    <a href="">Our features</a>
-                    <a href="">History</a>
-                    <a href="">Subscription</a>
-                    <a href="">Our clients</a>
-                    <a href="">Locations</a>
-                </nav>
-            </section>
+                <section className={`${Styles.menuContainer}`}>
+                    <span className={`${Styles.menu}`} onClick={() => manageMenu()}><IoIosMenu /></span>
+                    <div id="menu-bg" className={`${Styles.bgMenu}`}>
+                        <nav id="menu-links" className={`${Styles.links}`}>
+                            <a href="">IMO technology</a>   
+                            <a href="">Our features</a>
+                            <a href="">History</a>
+                            <a href="">Subscription</a>
+                            <a href="">Our clients</a>
+                            <a href="">Locations</a>
+                        </nav>
+                    </div>
+                </section>
+            
         </header>
     );
 }

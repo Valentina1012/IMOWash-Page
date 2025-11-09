@@ -3,11 +3,21 @@
     padding: 3em;
     height: 50em;
     margin: 0 auto;
+
+    @media (max-width: 560px) {
+        width: inherit;
+        padding: 0;
+    }
 }
 
 h3 {
     color: #000;
     font-size: 1.4em;
+
+    @media (max-width: 560px) {
+        padding: 2.2em 0 1em 1em;
+        margin: 0;
+    }
 }
 
 .cardContainr {
@@ -15,32 +25,17 @@ h3 {
     justify-content: center;
     margin: 0 auto;
     gap: 1em;
-    width: 90%;
-}
+    width: 100%;
 
-@media (max-width: 1293px) and (min-width: 20px){
-    .cardContainr {
+    @media (max-width: 560px) {
+        width: inherit;
+    }
+
+    @media (max-width: 1293px) and (min-width: 20px){
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin: 0 auto;
         gap: 2em;
-        width: 90%;
-    }
-}
-
-@media (max-width: 560px) {
-    .principal {
-        width: inherit;
-        padding: 0;
-    }
-
-    .cardContainr {
-        width: inherit;
-    }
-
-    h3 {
-        padding: 2.2em 0 1em 1em;
-        margin: 0;
     }
 }

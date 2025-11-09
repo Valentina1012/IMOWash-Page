@@ -1,0 +1,137 @@
+.principal {
+    margin-top: 4em;
+    padding-left: 40px;
+
+    @media (max-width: 768px) {
+      padding-left: 0;
+    }
+}
+
+.header {
+    width: 45%;
+    height: fit-content;
+    opacity: .8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--phantomBlack);
+    padding-bottom: 1em;
+
+    @media (max-width: 768px) {
+      gap: 6px;
+      max-width: 100%;
+      :first-child {
+        max-width: 245px;
+      }
+    }
+
+    @media (width <= 1024px) {
+      gap: 6px;
+      width: 90%;
+    }
+}
+
+[class^="slide"],
+[class*=" slide"] {
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  font-size: 1.8em;
+  color: var(--phantomBlack);
+  height: fit-content;
+  max-height: 100vh;
+  padding: 24px 0 0 0;
+  gap: 20%;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.sliderPerson p {
+    font-size: .4em;
+}
+
+.testimonial {
+    width: 22em;
+    text-wrap: pretty;
+}
+
+.navigation-wrapper {
+  position: relative;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+}
+
+.navCarousel {
+    display: flex;
+    align-items: center;
+    gap: .6em;
+}
+
+.dot {
+  border: none;
+  width: 15px;
+  height: 15px;
+  background: var(--lightGray);
+  border-radius: 50%;
+  margin-left: 5px;
+  padding: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.dot:focus {
+  outline: none;
+}
+
+.pDot {
+    padding-left: 1em;
+    cursor: pointer;
+    color: var(--lightGray);
+}
+
+.dot-active, .pDot.activeP {
+    scale: 1.25
+}
+
+.dot.active {
+  display: block;
+  background: #000;
+  margin-left: 1em;
+}
+
+.pDot.activeP {
+    padding: 0;
+    color: var(--phantomBlack);
+}
+
+.testimonialsNav {
+    color: var(--phantomBlack);
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+}
+
+.footer {
+    display: flex;
+    gap: 18%;
+    padding: 50px 0 0 0;
+
+    @media (max-width: 768px) {
+      justify-content: center;
+      padding: 20px 0 0 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonial, .sliderPerson p {
+      width: 100%;
+      padding-left: 4px;
+    }
+}

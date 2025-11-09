@@ -1,10 +1,30 @@
 .principal {
     padding: 1em 1em 3em 1em;
     width: 90%;
+
+    @media (max-width: 820px) {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    @media (max-width: 448px) {
+        padding: 0;
+        width: 100%;
+    }
 }
 
 .innerContent {
     margin-bottom: 40px;
+
+    @media (max-width: 820px) {
+        margin-bottom: 0;   
+        display: flex;
+    }
+
+    @media (max-width: 448px) {
+        padding: 1.5em;
+    }
 }
 
 .bgWhite-secondGray {
@@ -46,6 +66,10 @@
     width: 42.5%;
     line-height: .9em;
     font-size: clamp(1rem, 1.7vw, 5rem);
+
+    @media (max-width: 820px) {
+        width: 40.5%;
+    }
 }
 
 .benefit {
@@ -69,35 +93,3 @@
     content: "─";
     padding-right: .3em;
 }
-
-@media (max-width: 820px) {
-    .principal {
-        display: flex;
-        width: 95%;
-        flex-direction: column;
-    }
-
-    .innerContent {
-        margin-bottom: 0;    
-    }
-
-    .innerContent {
-        display: flex;
-    }
-
-    .subtitle {
-        width: 40.5%;
-    }
-}
-
-
-@media (max-width: 448px) {
-    .principal {
-        width: 100%;
-        padding: 0;
-    }
-    .innerContent {
-        padding: 1.5em;
-    }
-}
-

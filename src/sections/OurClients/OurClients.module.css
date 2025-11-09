@@ -1,0 +1,33 @@
+.principal {
+    padding: 2em 0;
+    background: #fff;
+    width: 100%;
+}
+
+.sliderContainr {
+    width: 94%;
+    margin: 0 auto;
+}
+
+[class^="number-slide"],
+[class*=" number-slide"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  max-height:20vh;
+}
+
+.title {
+    margin: 0 0 0 .4em;
+    color: var(--phantomBlack);
+    font-size: clamp(3rem, 5vw, 10rem);
+    padding-bottom: .6em;
+}
+
+.listContainr {
+    display: flex;
+    gap: 1em;
+}
+
+
