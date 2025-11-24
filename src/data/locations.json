@@ -1,0 +1,24 @@
+[
+    {
+        "specialty": "Car wash",
+        "ubication": "Brindale RD, Stockport",
+        "extendedUbication" : "REDROCK, Unit 10, Bridgefield St, Stockport SK1 1SA, United Kingdom",
+        "hours": ["Sunday - Thursday, 8 AM - 10PM", "Friday - Saturday, 10AM - 8PM"],
+        "images": ["https://i.postimg.cc/sDyTtZLp/Car-with-foam.jpg", "https://i.postimg.cc/PJPyXmmq/Washing-station3.jpg", "https://i.postimg.cc/JntdvS4v/car_imo.avif"]
+    },
+    {
+        "specialty": "Car wash/detailing",
+        "ubication": "Cedar Grove, Manchester",
+        "extendedUbication" : "OAKRIDGE, Suite 7, Elmwood St, Stockport SK13CD, United Kingdom",
+        "hours": ["Sunday - Thursday, 8 AM - 10PM", "Friday - Saturday, 10AM - 8PM"],
+        "images": ["https://i.postimg.cc/fWYH2v8K/Car-being-washed.jpg", "https://i.postimg.cc/zfVLv0Lm/Clean-car.jpg", "https://i.postimg.cc/6QfYY6WB/Washing-station2.jpg"]
+    },
+    {
+        "specialty": "Car wash/detailing",
+        "ubication": "Maple Laxus, Birmingham",
+        "extendedUbication" : "OAKRIDGE, Suite 7, Elmwood St, Stockport SK13CD, United Kingdom",
+        "hours": ["Sunday - Thursday, 8 AM - 10PM", "Friday - Saturday, 10AM - 8PM"],
+        "images": ["https://i.postimg.cc/4NZWrh06/White-car-being-washed.jpg", "https://i.postimg.cc/8cVsyGZQ/Clean-white-car.jpg", "https://i.postimg.cc/5NgjmZvT/Clean-white-car2.jpg", "https://i.postimg.cc/QCGCCD75/Washing-station.jpg"]
+    }
+]
+

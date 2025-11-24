@@ -78,14 +78,13 @@
     @media (max-width: 1293px) and (min-width: 20px){
         display: flex;
         flex-direction: column;
-        transform: translateX(100vw);
+        transform: translateX(16vw);
         gap: 2em;
         height: 100vh;
         margin-right: 0;
         padding: 8em 0;
         border-top: 2px solid rgb(95, 95, 95);
         border-radius: 0 0 .6em .6em;
-        transition: all 0.3s ease;
         text-align: right;
         background: var(--mainGradient);
     }
@@ -123,10 +122,10 @@
     }
 
     .bgMenu {
-        z-index: -5;
+        display: none;
+        background: rgba(0, 0, 0, 0.5);
         margin-top: 5.3em;
         width: 100vw;
-        background: none;
         inset: 0;
         position: fixed;
     }

@@ -7,16 +7,9 @@ export default function Header() {
     const [showingMenu, setShowingMenu] = useState(true)
 
     const manageMenu = () => {
-        const dataMenu = document.getElementById("menu-links");
         const menuBg = document.getElementById("menu-bg");
 
-        if(showingMenu) {
-            dataMenu.style.transform = "translateX(150px)"
-            menuBg.style.background = "rgba(0, 0, 0, 0.5)"
-        } else {
-            dataMenu.style.transform = "translateX(100vw)"
-            menuBg.style.background = "none"
-        }
+        showingMenu ? menuBg.style.display = "block" : menuBg.style.display = "none"
         setShowingMenu(!showingMenu);
     }
 

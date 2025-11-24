@@ -1,5 +1,5 @@
 .principal {
-    margin-top: 4em;
+    margin-top: 6em;
     padding-left: 40px;
 
     @media (max-width: 768px) {
@@ -20,6 +20,7 @@
     @media (max-width: 768px) {
       gap: 6px;
       max-width: 100%;
+      padding-left: 4px;
       :first-child {
         max-width: 245px;
       }
@@ -50,7 +51,7 @@
 }
 
 .sliderPerson p {
-    font-size: .4em;
+    font-size: .5em;
 }
 
 .testimonial {
@@ -131,7 +132,10 @@
 
 @media (max-width: 768px) {
     .testimonial, .sliderPerson p {
-      width: 100%;
-      padding-left: 4px;
+      padding-left: 6px;
+    }
+
+    .testimonial {
+      width: 99%;
     }
 }

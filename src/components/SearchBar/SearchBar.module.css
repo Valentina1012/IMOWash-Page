@@ -1,0 +1,39 @@
+.principal {
+    background: var(--veryLightGray);
+    display: flex;
+    align-items: center;
+    max-width: 32em;
+    min-width: 20em;
+    height: 40px;
+    padding: 0px 16px;
+    border-radius: 24px;
+    gap: 20px;
+}
+
+.inputContainr {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.iconInput {
+    display: flex;
+    align-items: center;
+    color: var(--electricTurquoise);
+}
+
+.inputBar {
+    flex: 1;
+    background: none;
+    border: none;
+    outline: none;
+    padding-left: 6px;
+    font-size: 1em;
+}
+
+.btnAction {
+    border: none;
+    background: none;
+    font-weight: bold;
+    padding-right: 14px;
+}

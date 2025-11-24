@@ -5,6 +5,7 @@ import OurFeatures from './sections/OurFeatures/OurFeatures.jsx'
 import History from './sections/History/History.jsx'
 import Subscription from './sections/Subscription/Subscription';
 import OurClients from './sections/OurClients/OurClients.jsx'
+import Locations from './sections/Locations/Locations';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <History />
       <Subscription />
       <OurClients />
+      <Locations />
     </>
   )
 }

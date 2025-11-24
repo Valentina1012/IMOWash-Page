@@ -1,6 +1,6 @@
 .principal {
     position: relative;
-    background: #EFF1F5;
+    background: var(--veryLightGray);
     height: 100%;
     width: 20em;
     display: flex;
