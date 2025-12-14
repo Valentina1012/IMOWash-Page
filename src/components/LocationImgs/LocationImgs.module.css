@@ -13,9 +13,13 @@
 
 .imgDetail {
     width: 700px;
-    height: 400px;
+    height: fit-content;
     object-fit: contain;
     anchor-name: --imgDetail;
+
+    @media (max-width: 850px) {
+        width: 90%;
+    }
 }
 
 .closeBtn {
