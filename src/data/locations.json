@@ -1,24 +1,30 @@
 [
     {
+        "id": "8b45b029",
         "specialty": "Car wash",
         "ubication": "Brindale RD, Stockport",
         "extendedUbication" : "REDROCK, Unit 10, Bridgefield St, Stockport SK1 1SA, United Kingdom",
         "hours": ["Sunday - Thursday, 8 AM - 10PM", "Friday - Saturday, 10AM - 8PM"],
-        "images": ["https://i.postimg.cc/sDyTtZLp/Car-with-foam.jpg", "https://i.postimg.cc/PJPyXmmq/Washing-station3.jpg", "https://i.postimg.cc/JntdvS4v/car_imo.avif"]
+        "images": [{"id": 1, "url": "https://i.postimg.cc/sDyTtZLp/Car-with-foam.jpg"}, {"id": 2, "url": "https://i.postimg.cc/PJPyXmmq/Washing-station3.jpg"}, {"id": 3, "url": "https://i.postimg.cc/JntdvS4v/car_imo.avif"}],
+        "postCode": "1AKQI42"
     },
     {
+        "id": "980234a1",
         "specialty": "Car wash/detailing",
         "ubication": "Cedar Grove, Manchester",
         "extendedUbication" : "OAKRIDGE, Suite 7, Elmwood St, Stockport SK13CD, United Kingdom",
         "hours": ["Sunday - Thursday, 8 AM - 10PM", "Friday - Saturday, 10AM - 8PM"],
-        "images": ["https://i.postimg.cc/fWYH2v8K/Car-being-washed.jpg", "https://i.postimg.cc/zfVLv0Lm/Clean-car.jpg", "https://i.postimg.cc/6QfYY6WB/Washing-station2.jpg"]
+        "images": [{"id": 1, "url": "https://i.postimg.cc/fWYH2v8K/Car-being-washed.jpg"}, {"id": 2, "url": "https://i.postimg.cc/zfVLv0Lm/Clean-car.jpg"}, {"id": 3, "url": "https://i.postimg.cc/6QfYY6WB/Washing-station2.jpg"}],
+        "postCode": "BM5KW40"
     },
     {
+        "id": "ae48c149",
         "specialty": "Car wash/detailing",
         "ubication": "Maple Laxus, Birmingham",
         "extendedUbication" : "OAKRIDGE, Suite 7, Elmwood St, Stockport SK13CD, United Kingdom",
         "hours": ["Sunday - Thursday, 8 AM - 10PM", "Friday - Saturday, 10AM - 8PM"],
-        "images": ["https://i.postimg.cc/4NZWrh06/White-car-being-washed.jpg", "https://i.postimg.cc/8cVsyGZQ/Clean-white-car.jpg", "https://i.postimg.cc/5NgjmZvT/Clean-white-car2.jpg", "https://i.postimg.cc/QCGCCD75/Washing-station.jpg"]
+        "images": [{"id": 1, "url": "https://i.postimg.cc/4NZWrh06/White-car-being-washed.jpg"}, {"id": 2, "url": "https://i.postimg.cc/8cVsyGZQ/Clean-white-car.jpg"}, {"id": 3, "url": "https://i.postimg.cc/5NgjmZvT/Clean-white-car2.jpg"}, {"id": 4, "url": "https://i.postimg.cc/QCGCCD75/Washing-station.jpg"}],
+        "postCode": "0OSF7HA"
     }
 ]
 

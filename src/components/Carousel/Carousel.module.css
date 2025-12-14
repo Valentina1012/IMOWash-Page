@@ -1,0 +1,26 @@
+.principal {
+    width: 100%;
+    @media (max-width: 1024px) { 
+        max-width: 100%;
+    }
+}
+
+.navigationWrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    @media (max-width: 1024px) { 
+        max-width: 100%;
+    }
+}
+
+.slideContainr {
+    height: 100%;
+    width: 100%;
+}
+
+[class*=" slideLocationContainr"] {
+  display: flex;
+  height: 100%;
+}

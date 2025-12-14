@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0; 
+  -webkit-tap-highlight-color: transparent;
 }
 
 #root {
@@ -41,4 +42,48 @@ body {
   margin: 0;
   color: #fff;
   background-color: #292929;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  fill: #fff;
+  cursor: pointer;
+
+  &.centered {
+    top: 50%;
+  }
+}
+
+.arrowLeft {
+  left: 5px;
+
+  &.arrowPreview {
+    left: 25%;
+  }
+}
+
+.arrowRight {
+  right: 5px;
+
+  &.arrowPreview {
+    right: 25%;
+  }
+}
+
+.arrowDisabled {
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 820px) {
+  .arrowLeft.arrowPreview {
+    left: 5%;
+  }
+  .arrowRight.arrowPreview {
+    right: 5%;
+  }
 }

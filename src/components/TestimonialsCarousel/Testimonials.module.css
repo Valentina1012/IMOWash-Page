@@ -32,15 +32,14 @@
     }
 }
 
-[class^="slide"],
-[class*=" slide"] {
+[class*=" slideTestimonial"] {
   display: flex;
   align-items: start;
   justify-content: flex-start;
   font-size: 1.8em;
   color: var(--phantomBlack);
   height: fit-content;
-  max-height: 100vh;
+  max-height: 100dvh;
   padding: 24px 0 0 0;
   gap: 20%;
 
@@ -137,5 +136,6 @@
 
     .testimonial {
       width: 99%;
+      font-size: 1.3em;
     }
 }

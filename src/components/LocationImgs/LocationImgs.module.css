@@ -1,0 +1,32 @@
+.locationDetail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 150;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100dvh;
+    background: rgba(0, 0, 0, 0.623);
+}
+
+.imgDetail {
+    width: 700px;
+    height: 400px;
+    object-fit: contain;
+    anchor-name: --imgDetail;
+}
+
+.closeBtn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2em;
+    position-anchor: --imgDetail;
+    position: absolute;
+    right: anchor(right);
+    bottom: anchor(top);
+    z-index: 200;
+}

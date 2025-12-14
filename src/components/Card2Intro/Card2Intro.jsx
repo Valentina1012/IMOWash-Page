@@ -7,7 +7,6 @@ export default function Card2Intro() {
         <article className={`${Styles.principal}`}>
                 <header>
                     <div>
-                        {/* <h3>Your car loves this. So does Earth.</h3> */}
                         <p className={`${Styles.title}`}>Your car loves this. So does Earth.</p>
                         <p>Beyond clean. Eco-intelligent.</p>
                     </div>

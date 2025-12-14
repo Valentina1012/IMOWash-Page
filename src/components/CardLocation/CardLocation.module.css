@@ -1,19 +1,18 @@
 .principal {
-    max-width: 50%;
-
+    width: 100%;
+    height: 100%;
     @media (max-width: 1024px) { 
         max-width: 100%;
     }
 }
 
 .navigationWrapper {
-    position: relative;
     height: fit-content;
-}
-
-.slideContainr {
-    height: 100%;
     width: 100%;
+    position: relative;
+    @media (max-width: 1024px) { 
+        max-width: 100%;
+    }
 }
 
 .specialty, .titleUbication {
@@ -28,11 +27,12 @@
     width: 400px;
 }
 
-[class^="slide"],
-[class*=" slide "] {
+[class*=" slideLocation "] {
   display: flex;
-  height: 300px;
-  /* width: 400px; */
+  height: 100%;
+  width: fit-content;
+  padding: 0;
+  font-size: 1em;
 }
 
 .titleUbication, .specialty {
@@ -41,70 +41,47 @@
 
 .imgSlide {
     position: relative;
+    height: 400px;
     width: 100%;
-    height: 100%;
-    z-index: -20;
-    object-fit: cover;  
+    object-fit: cover;
 }
 
 .slideContainr::before {
     content: "";
     position: absolute;
     background: rgba(0,0,0,0.3);
-    width: inherit;
-    height: 100%;
+    width: 100%;
+    height: 400px;
     z-index: 90;
 }
 
-.dots {
-    width: 70px;
-    display: flex;
-    justify-content: flex-end;
-    background: white;
-    border-radius: 16px;
-    padding: 0px 4px;
+.iconOpenWindow {
     position: absolute;
-    bottom: 10px;
-    right: 10px;
-    gap: 2px;
-}
-
-.dot {
-    color: var(--lightGray);
-    font-size: 1em;
-    background: none;
-    border: none;
+    top: 0;
+    right: 0;
+    z-index: 140;
+    margin: 4px;
+    color: white;
     cursor: pointer;
 }
 
-.dot::before {
-    content: "●";
-}
-
-.activeDot::before {
-    display: flex;
-    content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='8' stroke-linecap='round' stroke-linejoin='round' ><path d='M5 12h14'/></svg>"); /*━*/
-    color: black;
-    font-weight: bold;
-    rotate: 180deg;
-}
-
-.extendedUbication {
+.extendedUbication, .hours, .link {
     width: 100%;
-    font-size: 1em;
+    font-size: .5em;
     opacity: 1;
 }
 
 .footer {
     background: var(--veryLightGray);
     font-weight: bold;
+    font-size: 2em;
     padding: 20px 20px 0 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
-    grid-template-rows: repeat(2, 1fr); 
-    gap: 32px;
+    grid-template-rows: repeat(3, min(fit-content, 1fr)); 
+    gap: 20px;
     align-items: start;
-    /* height: 250px; */
+    max-height: 250px;
 }
 
 .btnReservation {
@@ -132,4 +109,12 @@
 
 .link {
     color: inherit;
+}
+
+.btnReservation, .link {
+    margin: 12px 0 22px 0;
+}
+
+hr {
+    grid-column: span 2;
 }

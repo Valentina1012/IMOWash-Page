@@ -1,6 +1,7 @@
 .principal {
     color: var(--phantomBlack);
     background: #fff;
+    position: relative;
     padding: 8em 2em;
     display: flex;
     flex-direction: column;
@@ -27,10 +28,16 @@
 .sliderContainr {
     display: flex;
     gap: 10px;
-    
-    width: 60%;
+    margin-top: 30px;
+    overflow-x: hidden;
+
     @media (max-width: 1024px) { 
         flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+
+    @media (max-width: 1536px) { 
         width: 100%;
     }
 }
@@ -42,4 +49,11 @@
 .subtitle {
     color: var(--deepGray);
     padding: 32px 0;
+}
+
+.searchNotFound {
+    text-align: center;
+    padding: 4em;
+    font-size: 2em;
+    color: var(--lightGray);
 }
