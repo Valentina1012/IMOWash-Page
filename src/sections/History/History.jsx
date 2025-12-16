@@ -2,7 +2,7 @@ import Styles from './History.module.css'
 
 export default function History() {
     return(
-        <section className={`${Styles.principal}`}>
+        <section id="history" className={`${Styles.principal}`}>
             <header className={`${Styles.header}`}>
                 <p>imowash</p> 
                 <span>-</span> 

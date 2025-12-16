@@ -5,9 +5,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    anchor-name: --header-nav;
     margin: 0;
     position: fixed;
-    top: 0;
     z-index: 100;
     backdrop-filter: blur(10px);
     background: linear-gradient(to top, rgba(49, 114, 255, 0.418));
@@ -25,7 +25,7 @@
 
     @media (max-width: 1293px) and (min-width: 20px){
         gap: .1em;
-        flex-direction: column;
+        flex-direction: row;
     }
 }
 
@@ -55,7 +55,7 @@
     position: absolute;
     right: 50%;
 
-    @media (max-width: 535px) {
+    @media (max-width: 1536px) {
         display: none;
     }
 }
@@ -80,7 +80,7 @@
         flex-direction: column;
         transform: translateX(16vw);
         gap: 2em;
-        height: 100dvh;
+        height: 100svh;
         margin-right: 0;
         padding: 8em 0;
         border-top: 2px solid rgb(95, 95, 95);
@@ -93,7 +93,7 @@
 .links a {
     text-decoration: none;
     color: #fff;
-    margin: 0 1em;
+    margin: 0 1.6em;
 
     @media (max-width: 1293px) and (min-width: 20px){
         text-align: left;
@@ -112,21 +112,19 @@
     }
 
     .menuContainer {
-        padding: 2em 0;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         position: absolute;
         right: 0;
-        top: 0;
     }
 
     .bgMenu {
         display: none;
         background: rgba(0, 0, 0, 0.5);
-        margin-top: 5.3em;
-        width: 100vw;
-        inset: 0;
+        width: 100svw;
+        position-anchor: --header-nav;
+        top: anchor(bottom);
         position: fixed;
     }
 }

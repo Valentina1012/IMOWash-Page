@@ -3,7 +3,7 @@ import Styles from './Subscription.module.css'
 
 export default function Subscription() {
     return(
-        <section className={`${Styles.principal}`}>
+        <section id="subscription" className={`${Styles.principal}`}>
             <p className={`${Styles.description}`}>With regular visits, deatiling costs add up. </p>
             <p className={`${Styles.description}`}>Our membership gives you access to premium services ─ without the premium price tag.</p>
             <div className={`${Styles.subsContainr}`}>

@@ -14,8 +14,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 10dvh;
-  max-height: 20dvh;
+  height: 10svh;
+  max-height: 20svh;
 }
 
 .title {

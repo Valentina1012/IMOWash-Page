@@ -38,7 +38,7 @@ export default function OurClients() {
 
     return (
         
-        <section className={`${Styles.principal}`}>
+        <section id="ourClients" className={`${Styles.principal}`}>
             <p className={`${Styles.title}`}>Partners</p>
             <div className={`${Styles.sliderContainr}`}>   
                 <ul ref={sliderRef} className="keen-slider">

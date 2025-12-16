@@ -26,12 +26,12 @@ export default function Header() {
                     <span className={`${Styles.menu}`} onClick={() => manageMenu()}><IoIosMenu /></span>
                     <div id="menu-bg" className={`${Styles.bgMenu}`}>
                         <nav id="menu-links" className={`${Styles.links}`}>
-                            <a href="">IMO technology</a>   
-                            <a href="">Our features</a>
-                            <a href="">History</a>
-                            <a href="">Subscription</a>
-                            <a href="">Our clients</a>
-                            <a href="">Locations</a>
+                            <a href="#technology">IMO technology</a>   
+                            <a href="#ourFeatures">Our features</a>
+                            <a href="#history">History</a>
+                            <a href="#subscription">Subscription</a>
+                            <a href="#ourClients">Our clients</a>
+                            <a href="#locations">Locations</a>
                         </nav>
                     </div>
                 </section>

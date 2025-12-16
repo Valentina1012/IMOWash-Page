@@ -1,5 +1,5 @@
 .principal {
-    height: 100dvh;
+    height: 100svh;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -79,7 +79,7 @@
 .videoBg {
     object-fit: cover;
     width: 100dvw;
-    height: 100dvh;
+    height: 100svh;
     position: fixed;
     top: 0;
     left: 0;

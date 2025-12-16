@@ -24,13 +24,13 @@ export default function Locations() {
             return;
         } 
         const cardsFiltradas = todasLasCards.filter(c =>
-            c.ubication.toLowerCase().includes(e.target.value.toLowerCase()) || c.postCode.toLowerCase().includes(e.target.value.toLowerCase())
+            c.ubication[0].toLowerCase().includes(e.target.value.toLowerCase()) || c.postCode.toLowerCase().includes(e.target.value.toLowerCase())
         );
         cardsFiltradas?.length > 0 ? setSearch(cardsFiltradas) : setSearch("No se ha encontrado la búsqueda");
     }
 
     return (
-        <section className={`${Styles.principal}`}>
+        <section id="locations" className={`${Styles.principal}`}>
             {locationClickeada?.id && (<LocationImgs location={locationClickeada} onClose={() => setLocationClickeada(null)}/>)}
             <h2>Find your nearest IMO car wash</h2>
             <div className={`${Styles.subtitleContainr}`}> 

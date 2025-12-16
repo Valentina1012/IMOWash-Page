@@ -7,7 +7,7 @@ import Card3Intro from '../../components/Card3Intro/Card3Intro'
 export default function Introduction() {
 
     return (
-        <section className={`${Styles.principal}`}>
+        <section id="technology" className={`${Styles.principal}`}>
             <h3>IMO technology</h3>
             <div className={`${Styles.cardContainr}`}>
                 <Card1Intro />

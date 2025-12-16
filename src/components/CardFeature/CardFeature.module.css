@@ -10,7 +10,7 @@
     z-index: 10;
 
     @media (max-width: 820px) {
-        height: 15em;
+        height: 17em;
     }
 }
 

@@ -6,7 +6,7 @@ import cleaningPayment from '../../assets/img/cleaning-payment.png'
 
 export default function OurFeatures() {
     return (
-        <section className={`${Styles.principal}`}>
+        <section id="ourFeatures" className={`${Styles.principal}`}>
             <h2 className={`${Styles.title}`}>Our features</h2>
             <div className={`${Styles.featuresContainr}`}>
                 <div className={`${Styles.firstChild}`}><CardFeature text="Experience advanced car care technology for a brilliant shine and secure cashless payments." image={cleaningPayment} altImg="Imagen de ejemplo" /></div>

@@ -10,14 +10,14 @@ export default function Card3Intro() {
                 <span>More than clean</span>
                 <p>From a spotless exterior to a refreshed interior, we bring back that showroom shine without wasting a drop.</p>
             </header>
-            <div>
+            <footer>
                 <p className={`${Styles.title}`}>Drive Clean. Feel Amazing.</p>
-                <footer>
+                <div className={`${Styles.description}`}>
                     <p>Water-saving tecnology</p>
                     <p>Premium, scratch-free cleaning</p>
                     <p>Interior & exterior detailing</p>
-                </footer>
-            </div>
+                </div>
+            </footer>
         </section>
     )
 }
