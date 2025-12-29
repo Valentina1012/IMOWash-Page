@@ -1,7 +1,6 @@
 .principal {
     display: flex;
     flex-direction: column;
-    background: #fff;
     padding: 4em;
     height: fit-content;
 

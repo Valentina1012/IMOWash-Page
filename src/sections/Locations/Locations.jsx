@@ -24,7 +24,7 @@ export default function Locations() {
             return;
         } 
         const cardsFiltradas = todasLasCards.filter(c =>
-            c.ubication[0].toLowerCase().includes(e.target.value.toLowerCase()) || c.postCode.toLowerCase().includes(e.target.value.toLowerCase())
+            c.ubication[0].name.toLowerCase().includes(e.target.value.toLowerCase()) || c.postCode.toLowerCase().includes(e.target.value.toLowerCase())
         );
         cardsFiltradas?.length > 0 ? setSearch(cardsFiltradas) : setSearch("No se ha encontrado la búsqueda");
     }
