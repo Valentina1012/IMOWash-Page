@@ -19,6 +19,11 @@ import lynkco from './lynkco-logo.png'
 import bac from './bac-logo.png'
 import amg from './amg-logo.png'
 
+// imágenes mobile app features
+import featureMobile1 from './feature1-mobile.png'
+import featureMobile2 from './feature2-mobile.png'
+import featureMobile3 from './feature3-mobile.png'
+
 export {
     ninetyPercent,
     blueCar,
@@ -29,11 +34,11 @@ export {
     secure,
     whiteCar,
     iconIMO,
-    iconBlackIMO,
-    iconWhiteIMO,
+    iconBlackIMO, iconWhiteIMO,
     londonEV,
     lordstown,
     lynkco,
     bac,
-    amg
+    amg,
+    featureMobile1, featureMobile2, featureMobile3
 }

@@ -1,0 +1,151 @@
+.general {
+    color: var(--phantomBlack);
+    position: relative;
+    height: 56em;
+    margin: 8em 0;
+    width: 100%;
+
+    @media (max-width: 1024px) { 
+        max-height: 40em;
+    }
+
+    @media (max-width: 768px) { 
+        max-height: 32em;
+    }
+
+    @media (max-width: 640px) { 
+        max-height: 52em;
+    }    
+}
+
+.titleScroll {
+    font-size: 10em;
+    font-weight: bold;
+    text-align: center;
+    width: 5em;
+    line-height: .9em;
+
+    @media (max-width: 1536px) { 
+        font-size: 8em;
+    }
+
+    @media (max-width: 1280px) { 
+        font-size: 6em;
+        width: 100%;
+    }
+
+    @media (max-width: 800px) { 
+        font-size: 4.8em;
+        width: 100%;
+    }
+}
+
+.active {
+    color: var(--deepSignalBlue);
+}
+
+.activeSlide {
+    color: var(--deepSignalBlue);
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.4em;
+
+    @media (max-width: 1280px) { 
+        font-size: 1.6em;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media (max-width: 1024px) { 
+        font-size: 1em;
+    }
+}
+
+.twoFeatures {
+    display: flex;
+    width: 100%;
+    gap: 1em;
+
+    @media (max-width: 1280px) { 
+        justify-content: space-between;
+    }
+}
+
+.twoFeatures:last-of-type .feature:first-of-type{
+    margin-left: auto;
+
+    @media (max-width: 1280px) { 
+        margin-left: 0;
+    }
+}
+
+.feature {
+    width: 14em;
+    padding-bottom: 2em;
+    border-bottom: 4px solid var(--deepSignalBlue);
+
+    @media (max-width: 1792px) { 
+        width: 10em;
+        padding-bottom: 1em;
+        margin-bottom: 2em;
+    }
+
+    @media (max-width: 1280px) { 
+        max-width: fit-content;
+    }
+}
+
+.imgContainr {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute; 
+    bottom: 0;
+
+    @media (max-width: 640px) { 
+        bottom: 30%;
+    }
+}
+
+.imgMobile {
+    width: 40em;
+
+    @media (max-width: 1024px) { 
+        width: 28em;
+    }
+
+    @media (max-width: 768px) { 
+        width: 24em;
+    }
+}
+
+.btnDownloadApp {
+    background: var(--mainGradient);
+    color: white;
+    text-decoration: none;
+    padding: .4em .6em;
+    border-radius: 1em;
+    width: fit-content;
+}
+
+.footerMobileApp {
+    padding: 0 2em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .6em;
+
+    @media (max-width: 1280px) { 
+        padding: 0 1em;
+    }
+
+    @media (max-width: 768px) { 
+        gap: 0;
+    }
+}

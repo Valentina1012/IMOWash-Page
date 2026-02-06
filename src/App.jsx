@@ -6,6 +6,7 @@ import History from './sections/History/History.jsx'
 import Subscription from './sections/Subscription/Subscription';
 import OurClients from './sections/OurClients/OurClients.jsx'
 import Locations from './sections/Locations/Locations';
+import MobileAppFeatures from './sections/MobileAppFeatures.jsx/MobileAppFeatures.jsx'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Hero />
       <Introduction />
       <OurFeatures />
+      <MobileAppFeatures />
       <History />
       <Subscription />
       <OurClients />

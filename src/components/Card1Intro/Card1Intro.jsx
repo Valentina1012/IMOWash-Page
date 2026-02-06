@@ -22,8 +22,10 @@ export default function Card2Intro() {
                             <p>Less water <HiArrowSmallDown /></p>
                             <p>More impact</p>
                         </div>
-                        <p>A brilliant shine, with the planet in mind.</p>
-                        <p>Smarter wash starts here. Purity. Planet</p>
+                        <div className={`${Styles.textFooter}`}>
+                            <p>A brilliant shine, with the planet in mind.</p>
+                            <p>Smarter wash starts here. Purity. Planet</p>
+                        </div>
                     </footer>
                 </div>
             </article>

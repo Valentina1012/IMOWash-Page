@@ -39,7 +39,12 @@
     width: 6em;
 }
 
-.principal header p, footer > p {
+.textFooter p {
+    display: flex; 
+    gap: 2px;
+}
+
+.principal header p, .textFooter p {
     font-size: .7em;
     opacity: .6;
     width: 9em;
@@ -65,7 +70,7 @@
     height: fit-content;
 }
 
-.principal footer {
+.principal footer, .textFooter {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
